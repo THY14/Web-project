@@ -1,6 +1,6 @@
 import  'react';
 import Navbar from './components/Navbar';
-import Slide from "../src/components/slide"
+import Slide from "./components/Slide"
 import Logobottoslide from './components/Logobottoslide';
 import PES from './assets/img/PES.jpg';
 import Inputbt from './components/inputbt';
