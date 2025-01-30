@@ -1,0 +1,45 @@
+import 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Navigation } from 'swiper/modules';
+
+
+const slide = () => {
+  return (
+    <div>
+      (
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className=" overflow-y-auto mySwipe h-64 mt-[20%] rounded-lg"
+      >
+        <SwiperSlide><img  src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
+        <SwiperSlide><img src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
+        <SwiperSlide><img src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
+        <SwiperSlide><img src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
+        <SwiperSlide><img src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
+        <SwiperSlide><img src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
+        
+      </Swiper>  
+    </div>
+  )
+}
+
+export default slide
