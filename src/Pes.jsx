@@ -10,7 +10,7 @@ import Payment from './components/Payment';
 
 function Pes() {
     return (
-        <div className='bg-black h-full-screen'>
+        <div className='bg-black h-screen-full overflow-hidden'>
             <Navbar/>
             <Slide/>
             <Logobottoslide
@@ -24,7 +24,9 @@ function Pes() {
              />
              <Daimond/>
              <Payment/>
-             <Footer/>
+             <div className='lg:w-9/12 lg:ml-[28%] lg:pl-2 lg:pr-2'>
+              <Footer/>
+              </div>
         </div>
     );
 }

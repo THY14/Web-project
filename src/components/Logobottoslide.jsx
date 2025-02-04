@@ -4,7 +4,7 @@ import  'react'
 const Logobottoslide = ({Logo,text}) => {
   return (
     <>
-    <div className='flex justify-start space-x-5 items-center mt-[1%]'>
+    <div className='flex justify-start space-x-5 items-center mt-[1%] lg:flex lg:justify-center lg:w-3/4 lg:-ml-12'>
       <img className='w-16 h-16 ml-5  ' src={Logo} />
       <div>
         <span className='text-[#D49642] text-s font-sans font-bold'>{text}</span>
@@ -17,7 +17,7 @@ const Logobottoslide = ({Logo,text}) => {
       </div>
     </div>
     <div className='mt-5 ml-[5%] mb-5'>
-        <span className='text-white font-sans font-semibold'>Enter Your Game ID </span>
+        <span className='text-white font-sans font-semibold lg:flex lg:justify-center lg:w-2/4 lg:ml-6'>Enter Your Game ID </span>
     </div>
     </>
   )

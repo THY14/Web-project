@@ -16,7 +16,7 @@ const Payment = () => {
   };
 
   return (
-    <div className='flex justify-center my-4'>
+    <div className='flex justify-center my-4 lg:flex lg:justify-center lg:w-3/4 lg:mb-10 '>
       <button
         onClick={handleButtonClick}
         className="flex items-center bg-[#3E3F40] text-white rounded-lg w-11/12 sm:w-96 h-20 gap-x-4 px-5 py-3 cursor-pointer hover:bg-[#2a2b2c] transition-all"
@@ -32,7 +32,7 @@ const Payment = () => {
       {/* Modal - Payment Instructions or Embedded Payment Widget */}
       {showModal && (
         <div className="fixed inset-0 bg-gray-700 bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-10 rounded-lg w-88">
+          <div className="bg-white p-10 rounded-lg w-88 ">
             {/* You can place your payment-related content here, such as QR code or instructions */}
             <div className="mt-4">
               <img src={Qrcode} alt="QR Code" className="w-60 h-60 mx-auto" />

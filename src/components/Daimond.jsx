@@ -10,19 +10,19 @@ const DiamondTopUp = () => {
     { id: 1, name: ' 11 Daimonds', price: '0.25$', image: One  },
     { id: 2, name: ' 22 Daimonds', price: '0.50$', image: One  },
     { id: 3, name: ' 56 Daimonds', price: '1.00$', image: more },
-    { id: 3, name: 'Weekly Pass', price: '1.70$', image: weekly },
-    { id: 3, name: '112 Daimonds', price: '2.00$', image: more },
-    { id: 3, name: '336 Daimonds', price: '5.00$', image: more },
-    { id: 3, name: '570 Daimonds', price: '9.00$', image: twomore},
-    { id: 3, name: '1163 Daimonds', price: '18.00$', image: twomore},
-    { id: 3, name: '2398 Daimonds', price: '34.00$', image: three },
-    { id: 3, name: '6236 Daimonds', price: '82.00$', image: three },
-    { id: 3, name: '10833 Daimonds', price: '143.00$', image: three },
+    { id: 4, name: 'Weekly Pass', price: '1.70$', image: weekly },
+    { id: 5, name: '112 Daimonds', price: '2.00$', image: more },
+    { id: 6, name: '336 Daimonds', price: '5.00$', image: more },
+    { id: 7, name: '570 Daimonds', price: '9.00$', image: twomore},
+    { id: 8, name: '1163 Daimonds', price: '18.00$', image: twomore},
+    { id: 9, name: '2398 Daimonds', price: '34.00$', image: three },
+    { id: 10, name: '6236 Daimonds', price: '82.00$', image: three },
+    { id: 11, name: '10833 Daimonds', price: '143.00$', image: three },
   ];
 
   return (
     <div className="max-w-screen-md mx-auto p-3  ">
-      <div className="flex flex-wrap justify-evenly gap-x-2 gap-y-4 border-red-600 ">
+      <div className="flex flex-wrap justify-evenly gap-x-2 gap-y-4 border-red-600 lg:w-3/4  lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-8 lg:ml-[18%]">
         {options.map((option) => (
           <button
             key={option.id}
@@ -39,8 +39,9 @@ const DiamondTopUp = () => {
           </button>
         ))}
       </div>
-      <h1 className='text-white font-sans text-lg ml-[3%] p-2 mt-2'>Select your payment method</h1>
+      <h1 className='text-white font-sans text-lg ml-[3%] p-2 mt-3 lg:-ml-2  '>Select your payment method</h1>
     </div>
+
   );
 };
 

@@ -8,10 +8,11 @@ import Daimond from "./components/Daimond";
 import Footer from './components/Footer';
 import Payment from './components/Payment';
 
-function Mlbb() {
+export default function Mlbb() {
     return (
-        <div className='bg-black h-full-screen'>
+        <div className='bg-black h-screen-full overflow-hidden'>
             <Navbar/>
+            <div className='border-2 border-black '>
             <Slide/>
             <Logobottoslide
              Logo = {mlbblogo}
@@ -24,9 +25,14 @@ function Mlbb() {
              />
              <Daimond/>
              <Payment/>
-             <Footer/>
+              <div className='lg:w-9/12 lg:ml-[28%] lg:pl-2 lg:pr-2'>
+              <Footer/>
+              </div>
+            </div>
+            
+             
+             
         </div>
     );
 }
 
-export default Mlbb

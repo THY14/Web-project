@@ -15,7 +15,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 const slide = () => {
   return (
     <div>
-      (
+      
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -28,7 +28,7 @@ const slide = () => {
         }}
         navigation={true}
         modules={[Autoplay, Navigation]}
-        className=" overflow-y-auto mySwipe h-64 mt-[20%] rounded-lg"
+        className=" overflow-y-auto  mySwipe h-64 mt-[20%] rounded-lg lg:w-2/4 lg:h-2/4 lg:mt-[10%]"
       >
         <SwiperSlide><img  src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
         <SwiperSlide><img src={"https://systopup.com/admin-control/uploads/Top%20up%20banner-2.png"} /></SwiperSlide>
