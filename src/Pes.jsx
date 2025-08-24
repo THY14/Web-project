@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Slide from "./components/Slide"
 import Logobottoslide from './components/Logobottoslide';
 import PES from './assets/img/PES.jpg';
-import Inputbt from './components/inputbt';
+import Inputbt from './components/Inputbt.jsx';
 import Daimond from "./components/Daimond";
 import Footer from './components/Footer';
 import Payment from './components/Payment';
